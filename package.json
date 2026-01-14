@@ -1,0 +1,118 @@
+{
+  "name": "reposcan",
+  "displayName": "RepoScan",
+  "description": "Scan repositories for wallet-drain, fund exfiltration, and malicious execution patterns before you trust them",
+  "version": "0.1.0",
+  "publisher": "reposcan",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reposcan/reposcan-vscode"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Linters"
+  ],
+  "keywords": [
+    "security",
+    "web3",
+    "crypto",
+    "wallet",
+    "malware",
+    "scanner"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./dist/extension.js",
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true,
+      "description": "RepoScan is designed to work in untrusted workspaces to scan before you trust"
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "reposcan.scanRepository",
+        "title": "RepoScan: Scan Repository"
+      },
+      {
+        "command": "reposcan.scanFile",
+        "title": "RepoScan: Scan This File"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "reposcan.scanRepository",
+          "group": "navigation",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "reposcan.scanFile",
+          "group": "navigation",
+          "when": "!explorerResourceIsFolder"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "reposcanResults",
+          "name": "RepoScan Results",
+          "when": "reposcan.hasResults"
+        }
+      ]
+    },
+    "colors": [
+      {
+        "id": "reposcan.highRisk",
+        "description": "High risk indicator color",
+        "defaults": {
+          "dark": "#ff4444",
+          "light": "#cc0000"
+        }
+      },
+      {
+        "id": "reposcan.mediumRisk",
+        "description": "Medium risk indicator color",
+        "defaults": {
+          "dark": "#ffaa00",
+          "light": "#cc8800"
+        }
+      },
+      {
+        "id": "reposcan.lowRisk",
+        "description": "Low risk indicator color",
+        "defaults": {
+          "dark": "#44ff44",
+          "light": "#00cc00"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run build",
+    "build": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --minify",
+    "watch": "esbuild ./src/extension.ts --bundle --outfile=dist/extension.js --external:vscode --format=cjs --platform=node --watch",
+    "lint": "eslint src --ext ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/vscode": "^1.85.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "esbuild": "^0.19.8",
+    "eslint": "^8.55.0",
+    "typescript": "^5.3.2",
+    "vitest": "^1.0.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
