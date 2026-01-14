@@ -4,6 +4,46 @@
 
 A VS Code extension that scans repositories for wallet-drain, fund exfiltration, and malicious execution patterns **before you trust them**.
 
+---
+
+## 💸 This Is Real. You Can Be Drained.
+
+<p align="center">
+  <img src="demo.png" alt="Malicious VS Code tasks.json exploit" width="600">
+</p>
+
+> *"I lost a significant amount of money due to a silent, zero-interaction dev environment exploit.*
+>
+> *No wallet connection. No signing. No running the app.*
+>
+> *Just cloning a repo and opening it in VS Code.*
+>
+> *Malicious `.vscode/tasks.json` hooks can execute automatically on folder open once you trust the workspace, hidden, background execution. This is actively abused by DPRK Interview groups."*
+>
+> — [@imanishbarnwal](https://x.com/imanishbarnwal/status/2010302090137260426), Jan 2026
+
+**This isn't theoretical.** Developers are losing real money right now. The attack requires zero interaction — just opening a folder and clicking "Trust" is enough to drain your wallet.
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  THE ATTACK                                                      │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│  1. Clone repo          →  Looks normal                         │
+│  2. Open in VS Code     →  "Do you trust the authors?"          │
+│  3. Click "Trust"       →  💀 .vscode/tasks.json executes       │
+│  4. Nothing visible     →  Runs hidden in background            │
+│  5. Wallet drained      →  Keys exfiltrated, funds gone         │
+│                                                                  │
+│  Total user interaction: ONE CLICK                               │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**RepoScan was built to stop this.**
+
+---
+
 ## 🚨 Why RepoScan?
 
 Developers have lost significant funds to malicious repositories. Attack vectors include:
