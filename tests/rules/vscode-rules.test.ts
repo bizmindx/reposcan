@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { applyRule, matchFile } from '../scanner/matcher';
-import { vscodeRules } from './vscode-rules';
+import { applyRule, matchFile } from '../../src/scanner/matcher';
+import { vscodeRules } from '../../src/rules/vscode-rules';
 
 function getRule(id: string) {
   const rule = vscodeRules.find((r) => r.id === id);

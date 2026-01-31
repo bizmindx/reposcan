@@ -7,7 +7,7 @@ import { describe, it, expect, beforeEach, afterEach } from 'vitest';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
-import { Scanner } from './index';
+import { Scanner } from '../../src/scanner/index';
 
 let tmpDir: string;
 

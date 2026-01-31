@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { applyRule, matchFile } from '../scanner/matcher';
-import { pythonRules } from './python-rules';
+import { applyRule, matchFile } from '../../src/scanner/matcher';
+import { pythonRules } from '../../src/rules/python-rules';
 
 function getRule(id: string) {
   const rule = pythonRules.find((r) => r.id === id);

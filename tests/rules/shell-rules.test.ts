@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { applyRule, matchFile } from '../scanner/matcher';
-import { shellRules } from './shell-rules';
+import { applyRule, matchFile } from '../../src/scanner/matcher';
+import { shellRules } from '../../src/rules/shell-rules';
 
 function getRule(id: string) {
   const rule = shellRules.find((r) => r.id === id);

@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { applyRule, matchFile } from '../scanner/matcher';
-import { repoHeuristicsRules } from './repo-heuristics-rules';
+import { applyRule, matchFile } from '../../src/scanner/matcher';
+import { repoHeuristicsRules } from '../../src/rules/repo-heuristics-rules';
 
 function getRule(id: string) {
   const rule = repoHeuristicsRules.find((r) => r.id === id);

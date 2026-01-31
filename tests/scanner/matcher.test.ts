@@ -4,8 +4,8 @@
  */
 
 import { describe, it, expect } from 'vitest';
-import { matchFile, applyRule } from './matcher';
-import { Rule } from '../types';
+import { matchFile, applyRule } from '../../src/scanner/matcher';
+import { Rule } from '../../src/types';
 
 // ============================================
 // matchFile
