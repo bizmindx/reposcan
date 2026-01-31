@@ -1,6 +1,8 @@
 .vscode/**
 .vscode-test/**
+.claude/**
 src/**
+tests/**
 node_modules/**
 .gitignore
 tsconfig.json
@@ -9,3 +11,7 @@ tsconfig.json
 .eslintrc.json
 *.md
 !README.md
+public/repobot.png
+vitest.config.ts
+reposcan-prd.md
+demo.png

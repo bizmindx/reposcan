@@ -2,12 +2,13 @@
   "name": "reposcan",
   "displayName": "RepoScan",
   "description": "Scan repositories for wallet-drain, fund exfiltration, and malicious execution patterns before you trust them",
-  "version": "0.1.0",
-  "publisher": "reposcan",
+  "version": "0.1.1",
+  "publisher": "bizmindx",
   "license": "AGPL-3.0",
+  "icon": "public/logo.png",
   "repository": {
     "type": "git",
-    "url": "https://github.com/reposcan/reposcan-vscode"
+    "url": "https://github.com/bizmindx/reposcan"
   },
   "engines": {
     "vscode": "^1.85.0"
