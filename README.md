@@ -9,7 +9,7 @@ A VS Code extension that scans repositories for wallet-drain, fund exfiltration,
 ## 💸 This Is Real. You Can Be Drained.
 
 <p align="center">
-  <img src="demo.png" alt="Malicious VS Code tasks.json exploit" width="600">
+  <img src="https://github.com/user-attachments/assets/cfc13da0-bb2d-4c35-9eea-356fdc0b8fd1" alt="Malicious VS Code tasks.json exploit" width="600">
 </p>
 
 > *"I lost a significant amount of money due to a silent, zero-interaction dev environment exploit.*
@@ -142,8 +142,8 @@ RepoScan is open source (AGPL-3.0). Contributions welcome!
 
 ```bash
 # Clone
-git clone https://github.com/reposcan/reposcan-vscode
-cd reposcan-vscode
+git clone https://github.com/bizmindx/reposcan
+cd reposcan
 
 # Install
 npm install
