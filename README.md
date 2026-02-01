@@ -175,3 +175,5 @@ AGPL-3.0 — See [LICENSE](LICENSE) for details.
 ---
 
 **Stay safe. Scan before you trust.**
+
+Built by [@bizmindx](https://x.com/bizmindx)
