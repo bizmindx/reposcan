@@ -9,7 +9,7 @@ A VS Code extension that scans repositories for wallet-drain, fund exfiltration,
 ## 💸 This Is Real. You Can Be Drained.
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cfc13da0-bb2d-4c35-9eea-356fdc0b8fd1" alt="Malicious VS Code tasks.json exploit" width="600">
+  <img src="demo.png" alt="Malicious VS Code tasks.json exploit" width="600">
 </p>
 
 > *"I lost a significant amount of money due to a silent, zero-interaction dev environment exploit.*
@@ -67,7 +67,7 @@ These attacks are actively used by nation-state actors (DPRK "Interview" groups)
 ## 📦 Installation
 
 ### From VS Code Marketplace
-Search for "RepoScan" in the Extensions view (`Cmd+Shift+X`).
+[**Install RepoScan**](https://marketplace.visualstudio.com/items?itemName=bizmindx.reposcan) or search for "RepoScan" in the Extensions view (`Cmd+Shift+X`).
 
 ### From Source
 ```bash
