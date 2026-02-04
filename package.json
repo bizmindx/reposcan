@@ -15,8 +15,9 @@
     "vscode": "^1.85.0"
   },
   "categories": [
-    "Other",
-    "Linters"
+    "Linters",
+    "Testing",
+    "Other"
   ],
   "keywords": [
     "security",
@@ -24,8 +25,36 @@
     "crypto",
     "wallet",
     "malware",
-    "scanner"
+    "scanner",
+    "audit",
+    "vulnerability",
+    "defi",
+    "blockchain",
+    "exploit",
+    "supply-chain"
   ],
+  "galleryBanner": {
+    "color": "#1a1a2e",
+    "theme": "dark"
+  },
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/v/bizmindx.reposcan",
+      "href": "https://marketplace.visualstudio.com/items?itemName=bizmindx.reposcan",
+      "description": "VS Marketplace Version"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/i/bizmindx.reposcan",
+      "href": "https://marketplace.visualstudio.com/items?itemName=bizmindx.reposcan",
+      "description": "VS Marketplace Installs"
+    },
+    {
+      "url": "https://img.shields.io/github/license/bizmindx/reposcan",
+      "href": "https://github.com/bizmindx/reposcan/blob/main/LICENSE",
+      "description": "License"
+    }
+  ],
+  "qna": "https://github.com/bizmindx/reposcan/issues",
   "activationEvents": [
     "onStartupFinished"
   ],
